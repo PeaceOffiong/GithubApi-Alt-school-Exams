@@ -2,6 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { useGlobalContext } from "../context";
+import image from "../Image/CNEM4759.JPG"
 
 const Home = () => {
   const {
@@ -24,6 +25,12 @@ const Home = () => {
         <meta
           name="description"
           content="A responsive page displaying Peace's Github and repositories"
+        />
+        <link
+          rel="icon"
+          type="/Image/CNEM4759.JPG"
+          href="favicon.ico"
+          sizes="16x16"
         />
       </Helmet>
       <article className="intro">

@@ -38,6 +38,16 @@ const Navbar = () => {
                 TestError
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                to="/error"
+                className={({ isActive }) =>
+                  isActive ? "scrollLink active" : "scrollLink"
+                }
+              >
+                TestErrorPage
+              </NavLink>
+            </li>
           </ul>
         </div>
         <div className="nav-logo">

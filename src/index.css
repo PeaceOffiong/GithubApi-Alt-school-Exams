@@ -27,3 +27,10 @@ main .content .image-container .img {
   transition: 2s;
 }
 
+.error-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 80vh;
+}
