@@ -27,12 +27,12 @@ const initialState = {
 const AppProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  // const { loading, data } = useFetch(
-  //   "https://api.github.com/users/peaceOffiong"
-  // );
-  // const { loading: loading2, data: data2 } = useFetch(
-  //   "https://api.github.com/users/PeaceOffiong/repos"
-  // );
+  const { loading, data } = useFetch(
+    "https://api.github.com/users/peaceOffiong"
+  );
+  const { loading: loading2, data: data2 } = useFetch(
+    "https://api.github.com/users/PeaceOffiong/repos"
+  );
 
   useEffect(() => {
     if (loading) {

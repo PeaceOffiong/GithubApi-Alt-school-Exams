@@ -1,10 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import SocialMedia from "./SocialMedia";
-import { useGlobalContext } from '../context';
 
 const Navbar = () => {
-  const { HandleRepositories } = useGlobalContext();
   return (
     <nav id="nav">
       <div className="nav">
@@ -22,23 +20,22 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink
-                to="/repositories"
+                to="/Repositories"
                 className={({ isActive }) =>
                   isActive ? "scrollLink active" : "scrollLink"
                 }
-                onClick={HandleRepositories}
               >
                 Repositories
               </NavLink>
             </li>
             <li>
               <NavLink
-                to="singlerepositories"
+                to="/testerrorboundary"
                 className={({ isActive }) =>
                   isActive ? "scrollLink active" : "scrollLink"
                 }
               >
-                SingleRepository
+                TestError
               </NavLink>
             </li>
           </ul>

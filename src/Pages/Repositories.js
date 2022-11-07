@@ -13,9 +13,9 @@ const Repositories = () => {
   }
   return (
     <section className="contained">
-      <ul>
-        {paginatedRepositories.map((each, index) => {
-          return <EachRepo key={index} each={each} />;
+      <ul className='gig'>
+        {paginatedRepositories.map((each) => {
+          return <EachRepo key={each.id} each={each} />;
         })}
       </ul>
       <div className="btn-container">
