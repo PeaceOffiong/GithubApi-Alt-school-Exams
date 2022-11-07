@@ -26,26 +26,28 @@ const SingleRepository = () => {
       </article>
       <div className="table">
         <table>
-          <tr>
-            <td className="description">Description:</td>
-            <td>{presentRepository.description}</td>
-          </tr>
-          <tr>
-            <td className="description">Language:</td>
-            <td>{presentRepository.language}</td>
-          </tr>
-          <tr>
-            <td className="description">Fork:</td>
-            <td>{presentRepository.fork}</td>
-          </tr>
-          <tr>
-            <td className="description">Branch:</td>
-            <td>{presentRepository.default_branch}</td>
-          </tr>
-          <tr>
-            <td className="description">Created At :</td>
-            <td>{presentRepository.created_at}</td>
-          </tr>
+          <tbody>
+            <tr>
+              <td className="description">Description:</td>
+              <td>{presentRepository.description}</td>
+            </tr>
+            <tr>
+              <td className="description">Language:</td>
+              <td>{presentRepository.language}</td>
+            </tr>
+            <tr>
+              <td className="description">Fork:</td>
+              <td>{presentRepository.fork}</td>
+            </tr>
+            <tr>
+              <td className="description">Branch:</td>
+              <td>{presentRepository.default_branch}</td>
+            </tr>
+            <tr>
+              <td className="description">Created At :</td>
+              <td>{presentRepository.created_at}</td>
+            </tr>
+          </tbody>
         </table>
       </div>
       <div className="container">

@@ -43,7 +43,6 @@ const AppProvider = ({ children }) => {
     }
     if (!loading2) {
       dispatch({ type: "SET_REPOSITORIES", payload: paginate(data2) });
-      console.log(data2);
       dispatch({ type: "SET_PAGINATED_REPOSITORY", payload: paginate(data2) });
     }
       
@@ -70,10 +69,6 @@ const AppProvider = ({ children }) => {
   const handlePage = (index) => {
     dispatch({ type: "SET_PAGE", payload: index });
   };
-
-  console.log(state.Apidata);
-  console.log(state.repositories);
-  console.log(state.paginatedRepositories)
 
   return (
     <AppContext.Provider
