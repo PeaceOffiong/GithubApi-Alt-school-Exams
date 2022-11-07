@@ -50,19 +50,27 @@ const AppProvider = ({ children }) => {
 
 
   const nextPage = () => {
-      let nextPage = state.page + 1;
-      if (nextPage > state.Apidata.length - 1) {
+    const setNextPage = (page) => {
+      let nextPage = page + 1;
+      if (nextPage > state.repositories.length - 1) {
         nextPage = 0;
       }
-      dispatch({ type: "SET_PAGE", payload: nextPage });
+      return nextPage;
+    }
+    
+    dispatch({ type: "SET_PAGE", payload: setNextPage(state.page) });
+     
   };
 
   const prevPage = () => {
-      let prevPage = state.page - 1;
-    if (prevPage < 0) {
-        prevPage = state.Apidata.length - 1;
+    const setPrevPage = (page) => {
+      let prevPage = page - 1;
+      if (prevPage < 0) {
+        prevPage = state.repositories.length - 1;
+      }
+      return prevPage
     }
-    dispatch({type: "SET_PAGE", payload: prevPage})
+    dispatch({type: "SET_PAGE", payload: setPrevPage(state.page)})
     
   };
 
