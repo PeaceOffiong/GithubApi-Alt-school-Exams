@@ -1,5 +1,3 @@
-
-
 const Reducer = (state, action) => {
   switch (action.type) {
     case "SET_API_DATA":
