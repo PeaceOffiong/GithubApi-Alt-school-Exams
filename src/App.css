@@ -258,7 +258,7 @@ td{
 @media (min-width: 852px){
   .calc button {
       position: fixed;
-      left: 65%;
+      left: 61%;
       bottom: 35%;
     }
     .intro {
