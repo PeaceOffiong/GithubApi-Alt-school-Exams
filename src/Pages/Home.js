@@ -20,7 +20,7 @@ const Home = () => {
   }
   return (
     <main className="into">
-      <Helmet>
+      {/* <Helmet>
         <title>Peace's Github</title>
         <meta
           name="description"
@@ -28,11 +28,20 @@ const Home = () => {
         />
         <link
           rel="icon"
-          type="/Image/CNEM4759.JPG"
+          type={image}
           href="favicon.ico"
           sizes="16x16"
         />
+      </Helmet> */}
+      <Helmet>
+        <title>Peace's Github Portfolio</title>
+        <meta
+          name="description"
+          content="A responsive page displaying Peace's Github and repositories"
+        />
+        <link rel="icon" type="image/png" href="favicon.ico" sizes="16x16" />
       </Helmet>
+
       <article className="intro">
         <h2>hey there!</h2>
         <h2>i'm peace ben</h2>

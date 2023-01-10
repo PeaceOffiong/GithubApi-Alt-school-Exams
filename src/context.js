@@ -4,16 +4,16 @@ import reducer from "./Reducer";
 
 const AppContext = React.createContext();
 
-const paginate = (people) => {
+const paginate = (repos) => {
   const itemPerPage = 10;
-  const numberOfPages = Math.ceil(people.length / itemPerPage);
+  const numberOfPages = Math.ceil(repos.length / itemPerPage);
 
-  const newPeople = Array.from({ length: numberOfPages }, (_, index) => {
+  const newRepos = Array.from({ length: numberOfPages }, (_, index) => {
     const start = index * itemPerPage;
-    return people.slice(start, start + itemPerPage);
+    return repos.slice(start, start + itemPerPage);
   });
 
-  return newPeople;
+  return newRepos;
 };
 
 const initialState = {
